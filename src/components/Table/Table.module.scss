@@ -62,7 +62,7 @@
   }
 .body_table {
   overflow-x: auto;
-  max-height: 650px;
+  max-height: 400px;
   @include tablet {
     max-height: 300px;
     overflow-x: auto;
