@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard de Transacciones
 
-## Getting Started
+Este proyecto es un dashboard desarrollado con Next.js que lista las transacciones realizadas en un comercio. Permite revisar el detalle de cada transacción, realizar filtros por fecha y tipo de transacción, y buscar por cualquier parámetro de la tabla.
 
-First, run the development server:
+## Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**
+- **Node.js v18.17.0**
+- **Sass** como preprocesador de estilos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Requisitos
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Node.js v18.17.0**
+- **npm** (Node Package Manager) o **yarn**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Instalación
 
-## Learn More
+1. **Clonar el Repositorio**
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   git clone https://github.com/Hassler17/dashboard-bold
+   cd tu-repositorio
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Instalar Dependencias**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```sh
+   Usando npm:
+   npm install
 
-## Deploy on Vercel
+## Ejecución en Desarrollo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **npm run dev**
+- Abre http://localhost:3000 para ver el proyecto en tu navegador.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

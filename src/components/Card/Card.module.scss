@@ -1,0 +1,53 @@
+@import "../../styles/main.scss";
+
+.card {
+    width: 25%;
+    background-color: #ffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    height: 180px;
+    margin: 0;
+    @include tablet {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 20px;
+    background: $degradado-linear;
+    padding: 18px;
+    border-radius: 18px 18px 0px 0px;
+}
+
+.card_title {
+    color: $gris-claro;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
+
+.card_subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    color: $gris-oscuro;
+}
+
+.card_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card_amount {
+    font-size: 28px;
+    font-family: "Montserrat Bold";
+    font-style: $degradado-linear;
+    background: $degradado-linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

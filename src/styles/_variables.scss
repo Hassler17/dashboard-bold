@@ -1,0 +1,21 @@
+
+$azul: #121E6C;
+$rojo: #EE424E;
+$gris-oscuro: #606060;
+$gris-claro: #F3F3F3;
+$color-background: #F6F4F9;
+$degradado-linear: linear-gradient(270deg,#ee424e 13.86%,#121e6c 83.33%);;
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../../public/assets/fonts/Montserrat-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(../../public/assets/fonts/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: "Montserrat Light";
+    src: url(../../public/assets/fonts/Montserrat-Light.otf);
+}

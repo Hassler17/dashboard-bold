@@ -1,0 +1,10 @@
+@import "../../styles/main.scss";
+
+.container_card_filters {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    @include tablet {
+        flex-flow: column;
+    }
+}

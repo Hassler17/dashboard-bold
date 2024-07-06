@@ -1,0 +1,218 @@
+@import "../../styles/main.scss";
+
+.tableContainer {
+  margin-top: 20px;
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: 20px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-left: 3px solid #ffff;
+    width: 250px;
+
+    tr {
+      color: $gris-oscuro;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      font-family: "Montserrat";
+      background-color: #ffff;
+      text-align: left;
+    }
+
+    th:first-child {
+      padding: 5px 16px;
+    }
+
+    @include mobile {
+      th {
+       
+       text-align: left;
+       border-bottom: 1px solid #ddd;
+       &:nth-child(1) { width: 1%; padding: 12px 25px 12px 12px; div {
+        width: 125px;
+       }}
+       &:nth-child(2) { width: 1%; padding: 12px 25px 12px 12px; div {
+        width: 140px;
+       }}
+       &:nth-child(3) { width: 1%; padding: 12px 25px 12px 12px; div {
+        width: 126px;
+       }}
+       &:nth-child(4) { width: 1%; padding: 12px 23px 12px 12px; div {
+        width: 190px;
+       }}
+       &:nth-child(5) { width: 1%; padding: 12px 2px 12px 22px; div {
+        width: 126px;
+       }}
+     }
+   }
+
+
+  }
+.body_table {
+  overflow-x: auto;
+  max-height: 650px;
+  @include tablet {
+    max-height: 300px;
+    overflow-x: auto;
+  }
+}
+  tbody {
+    tr {
+      background-color: #ffff;
+      height: 70px;
+      border-top: 1px solid #9b9b9bdd;
+      font-size: 13px;
+      color: $gris-oscuro;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      font-family: "Montserrat";
+      background-color: #ffff;
+      text-align: left;
+    }
+
+    tr:first-child {
+      border-top: 1px solid #ddd;
+    }
+
+    td:nth-child(1) {
+      padding: 3px 16px;
+    }
+    @include mobile {
+      td {
+       
+       text-align: left;
+       border-bottom: 1px solid #ddd;
+       &:nth-child(1) { width: 1%; padding: 3px 25px 12px 12px; div {
+        width: 125px;
+       }}
+       &:nth-child(2) { width: 1%; padding: 3px 25px 12px 12px; div {
+        width: 140px;
+       }}
+       &:nth-child(3) { width: 1%; padding: 3px 25px 12px 12px; div {
+        width: 126px;
+       }}
+       &:nth-child(4) { width: 1%; padding: 3px 25px 12px 12px; div {
+        width: 126px;
+       }}
+       &:nth-child(5) { width: 1%; padding: 3px 2px 12px 22px; div {
+        width: 126px;
+       }}
+     }
+   }
+    th {
+      padding: 5px 16px;
+    }
+
+    td:nth-child(1) {
+      border-left: 3px solid $azul;
+      width: 300px;
+    }
+    td:nth-child(2) {
+      width: 400px;
+    }
+    td:nth-child(3) {
+      width: 360px;
+    }
+    td:nth-child(4) {
+      width: 335px;
+    }
+    td:nth-child(5) {
+      width: 275px;
+    }
+
+    .td_transaccion {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+      p {
+        color: $azul;
+      }
+    }
+
+    .td_metodo {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .td_monto {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      color: $azul;
+ 
+      span {
+        font-size: 10px;
+        color: $gris-oscuro;
+      }
+      p {
+        font-size: 10px;
+        color: $rojo;
+      }
+    }
+
+    tr:nth-child(even) td:nth-child(1) {
+      border-left: 3px solid #9b9b9bdd;
+      width: 250px;
+    }
+  }
+}
+
+
+.title_container {
+  width: 100%;
+  background-color: #ffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 18px 0px 0px;
+  height: 98px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  height: 46px;
+  background: $degradado-linear;
+  padding: 18px;
+  font-size: 15px;
+  color: $gris-claro;
+  border-radius: 18px 18px 0px 0px;
+}
+
+.card_title {
+  color: $gris-claro;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+.input_search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 16px;
+  font-size: 15px;
+  color: $gris-oscuro;
+  font-family: "Montserrat";
+  font-style: linear-gradient(270deg, #ee424e 13.86%, #121e6c 83.33%);
+
+  input {
+    width: 100%;
+    margin-left: 17px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}

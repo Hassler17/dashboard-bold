@@ -1,0 +1,86 @@
+@import "../../styles/main.scss";
+
+.triggerBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 231px;
+  right: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-radius: 8px;
+  padding: 10px;
+  width: 265px;
+  height: 198px;
+}
+
+.popup_content {
+  padding: 3px;
+}
+
+.form_container {
+  display: flex;
+  flex-flow: column;
+
+  margin-top: 27px;
+
+  button {
+    background: $rojo;
+    border-radius: 29px;
+    width: 235px;
+    height: 49px;
+    margin-top: 14px;
+    opacity: 0.5;
+    margin-left: 3px;
+    color: $gris-claro;
+  }
+}
+
+.header_popUp {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 142px;
+
+  span {
+    font-family: "Montserrat";
+    color: $azul;
+    font-size: 16px;
+  }
+}
+
+
+.popup_content label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: $azul;
+  font-family: "Montserrat Light";
+  cursor: pointer;
+}
+
+.popup_content input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-right: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.popup_content input[type="checkbox"]:checked {
+  background: $degradado-linear;
+}
