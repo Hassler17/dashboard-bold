@@ -34,7 +34,7 @@ export default function Home() {
   };
 
   const getData = async () => {
-    const url = '/prueba/bold/transacciones';
+    const url = '/api/proxy';
     await fetch(url)
       .then((response) => response.json())
       .then((transfers) => {
