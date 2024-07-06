@@ -7,11 +7,4 @@ module.exports = {
         },
       ];
     },
-    trailingSlash: true,
-    basePath: '',
-    images: {
-      loader: 'imgix',
-      path: '',
-    },
-    distDir: 'out', // Esto especifica el directorio de salida para Next.js
   };
