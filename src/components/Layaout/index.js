@@ -1,5 +1,5 @@
 import Header from "@/components/Layaout/components/Header";
-import style from "./layaout.module.scss"
+import style from "./Layaout.module.scss"
 export default function Layaout({ children }) {
   return (
     <div className={style.layout}>
