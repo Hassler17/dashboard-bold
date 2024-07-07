@@ -1,37 +1,46 @@
 @import "../../../../styles/main.scss";
 
 .header {
-    background: $degradado-linear; 
-    padding: 25px 126px 25px 60px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    top: 0; 
-    width: 100%; 
-    z-index: 30; 
+  background: $degradado-linear;
+  padding: 25px 126px 25px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+
+  @include mobile {
+    padding: 7px 7px 5px 10px;
   }
-  
-  .logo {
-    display: flex; 
-    align-items: center;
-    float: right;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  float: right;
+
+  @include mobile {
+    width: 86px;
+    height: 53px;
   }
-  
-  .menu {
-    display: flex; 
-    align-items: flex-end; 
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu__opcion {
+  margin-left: 20px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+  color: $gris-claro;
+  cursor: pointer;
+
+  .icono {
+    margin-left: 6px;
   }
-  
-  .menu__opcion {
-    margin-left: 20px; 
-    font-family: "Montserrat"; 
-    font-size: 15px; 
-    justify-content:center ;
-    display: flex;
-    color: $gris-claro; 
-    cursor: pointer;
-    .icono {
-      margin-left: 6px;
-    }
-  }
-  
+}

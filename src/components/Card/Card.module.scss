@@ -11,6 +11,9 @@
         width: 100%;
         margin-bottom: 15px;
     }
+    @include mobile {
+        height: 150px;
+    }
 }
 
 .card_header {
@@ -34,6 +37,11 @@
     margin-top: 20px;
     font-size: 18px;
     color: $gris-oscuro;
+    @include mobile {
+    margin-top: 8px;
+
+        font-size: 15px;
+    }
 }
 
 .card_body {
@@ -50,4 +58,7 @@
     background: $degradado-linear;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @include mobile {
+        font-size: 22px;
+    }
 }

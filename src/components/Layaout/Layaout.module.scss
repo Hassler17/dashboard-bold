@@ -22,6 +22,11 @@
   padding: 60px;
 
   @include mobile {
+    padding: 15px; 
+    overflow-x: auto;
+  }
+  @include tablet {
     padding: 15px;
+    overflow-x: auto;
   }
 }
